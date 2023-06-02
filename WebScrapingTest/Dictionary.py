@@ -9,7 +9,7 @@ def chooseWord():
     inp = input("Choose an English word\n")
     if(inp == ""):
         print("Selecting random word...")
-        myFile = open('C:\\Users\\tianf\\Downloads\\Programming projects\\words_dictionary.json')
+        myFile = open('words_dictionary.json')
         myDictionary = json.loads(myFile.read())
         myKeys = list(myDictionary.keys())
         rand = random.randint(0, len(myKeys))
